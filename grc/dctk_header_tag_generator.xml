@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<block>
+  <name>header_tag_generator</name>
+  <key>dctk_header_tag_generator</key>
+  <category>DCTK</category>
+  <import>import dctk</import>
+  <make>dctk.header_tag_generator($header_len, $payload_len, $length_tag_name)</make>
+  <param>
+    <name>Header Length</name>
+    <key>header_len</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Payload Length</name>
+    <key>payload_len</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Length tag name</name>
+    <key>length_tag_name</key>
+    <type>string</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>header_data</name>
+    <type>message</type>
+  </source>
+</block>

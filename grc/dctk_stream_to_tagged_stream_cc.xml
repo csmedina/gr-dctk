@@ -1,0 +1,25 @@
+<block>
+  <name>Stream to tagged stream cc</name>
+  <key>dctk_stream_to_tagged_stream_cc</key>
+  <category>DCTK</category>
+  <import>import dctk</import>
+  <make>dctk.stream_to_tagged_stream_cc($len_stream, $tags)</make>
+  <param>
+    <name>Length of the output stream</name>
+    <key>len_stream</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Tags</name>
+    <key>tags</key>
+    <type>raw</type>
+  </param>
+  <sink>
+    <name>Non-tagged stream</name>
+    <type>complex</type>
+  </sink>
+  <source>
+    <name>Tagged Stream</name>
+    <type>complex</type>
+  </source>
+</block>

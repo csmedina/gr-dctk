@@ -1,0 +1,15 @@
+<block>
+  <name>Peak detector abs value fb</name>
+  <key>dctk_peak_detector_abs_value_fb</key>
+  <category>DCTK</category>
+  <import>import dctk</import>
+  <make>dctk.peak_detector_abs_value_fb()</make>
+  <sink>
+    <name>Stream</name>
+    <type>float</type>
+  </sink>
+  <source>
+    <name>detector</name>
+    <type>byte</type>
+  </source>
+</block>

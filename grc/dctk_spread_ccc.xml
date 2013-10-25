@@ -1,0 +1,20 @@
+<block>
+  <name>Spread ccc</name>
+  <key>dctk_spread_ccc</key>
+  <category>DCTK</category>
+  <import>import dctk</import>
+  <make>dctk.spread_ccc($spreading_code)</make>
+  <param>
+    <name>Spreading code</name>
+    <key>spreading_code</key>
+    <type>complex_vector</type>
+  </param>
+  <sink>
+    <name>symbols</name>
+    <type>complex</type>
+  </sink>
+  <source>
+    <name>spread symbols</name>
+    <type>complex</type>
+  </source>
+</block>

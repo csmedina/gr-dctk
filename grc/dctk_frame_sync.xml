@@ -1,0 +1,29 @@
+<block>
+  <name>Frame sync</name>
+  <key>dctk_frame_sync</key>
+  <category>DCTK</category>
+  <import>import dctk</import>
+  <make>dctk.frame_sync($sync_sequence, $threshold)</make>
+  <param>
+    <name>Synchronization sequence</name>
+    <key>sync_sequence</key>
+    <type>complex_vector</type>
+  </param>
+  <param>
+    <name>Detection Threshold</name>
+    <key>threshold</key>
+    <type>float</type>
+  </param>
+  <sink>
+    <name>Received data</name>
+    <type>complex</type>
+  </sink>
+  <source>
+    <name>Correlation</name>
+    <type>float</type>
+  </source>
+  <source>
+    <name>detect</name>
+    <type>byte</type>
+  </source>
+</block>

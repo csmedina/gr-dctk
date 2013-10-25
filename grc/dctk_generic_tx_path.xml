@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<block>
+  <name>Generic Tx Path</name>
+  <key>dctk_generic_tx_path</key>
+  <category>DCTK</category>
+  <import>import dctk</import>
+  <make>dctk.generic_tx_path(
+    payload_packet_len=$payload_packet_len,
+    sync_packet_len=$sync_packet_len,
+    )</make>
+  <callback>set_payload_packet_len($payload_packet_len)</callback>
+  <callback>set_sync_packet_len($sync_packet_len)</callback>
+  <param>
+    <name>Payload length</name>
+    <key>payload_packet_len</key>
+    <value>96</value>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>Synchronization header length</name>
+    <key>sync_packet_len</key>
+    <value>96</value>
+    <type>raw</type>
+  </param>
+
+  <sink>
+    <name>header complex symbols</name>
+    <type>complex</type>
+    <vlen>1</vlen>
+  </sink>
+  <sink>
+    <name>payload complex symbols</name>
+    <type>complex</type>
+    <vlen>1</vlen>
+  </sink>
+  <source>
+    <name>tx symbols</name>
+    <type>complex</type>
+    <vlen>1</vlen>
+  </source>
+  <doc>This forms a generic transmission path for digital communications, it accepts a payload and a synchronizatino header to form a digital transmission packet</doc>
+</block>
