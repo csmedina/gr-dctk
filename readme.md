@@ -11,10 +11,12 @@ if dont
 	
 	cmake ..
 
+Finish with
+
 	make
 	sudo make install
 
-Open the GRC and load the flow graph examples/generic_rx_path.grc, then generate the python code (Press Generatte button).
+To use the GRC, first open the GRC and load the flow graph examples/generic_rx_path.grc, then generate the python code (Press Generatte button).
 Close GRC and open again.
 
 Try testing the flow examples/bpsk_tx_rx.grc
