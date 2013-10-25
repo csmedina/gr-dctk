@@ -1,10 +1,14 @@
 To build follow the instruction:
+	
 	mkdir build
 	cd build
 
 If you have CodeBlocks
+	
 	cmake .. -G "CodeBlocks - Unix Makefiles"
+
 if dont
+	
 	cmake ..
 
 	make
