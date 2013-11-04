@@ -31,7 +31,8 @@ endif()
 GR_PYTHON_INSTALL(
     FILES
     __init__.py
-    generic_tx_path.py DESTINATION ${GR_PYTHON_DIR}/dctk
+    generic_tx_path.py
+    generic_rx_path.py DESTINATION ${GR_PYTHON_DIR}/dctk
 )
 
 ########################################################################
@@ -48,3 +49,4 @@ GR_ADD_TEST(qa_generic_tx_path ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/
 GR_ADD_TEST(qa_frame_sync ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_frame_sync.py)
 GR_ADD_TEST(qa_peak_detector_abs_value_fb ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_peak_detector_abs_value_fb.py)
 GR_ADD_TEST(qa_header_tag_generator ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_header_tag_generator.py)
+GR_ADD_TEST(qa_generic_rx_path ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_generic_rx_path.py)

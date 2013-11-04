@@ -46,6 +46,7 @@ from dctk_swig import *
 
 # import any pure python here
 from generic_tx_path import generic_tx_path
+from generic_rx_path import generic_rx_path
 #
 
 # ----------------------------------------------------------------

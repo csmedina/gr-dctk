@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<block>
+  <name>generic_rx_path</name>
+  <key>dctk_generic_rx_path</key>
+  <category>DCTK</category>
+  <import>import dctk</import>
+  <make>dctk.generic_rx_path(
+		payload_len=$payload_len, sync_seq=$sync_seq, threshold=$threshold
+		)</make>
+  <param>
+    <name>Payload length</name>
+    <key>payload_len</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Synchronism sequence</name>
+    <key>sync_seq</key>
+    <type>complex_vector</type>
+  </param>
+  <param>
+    <name>Threshold for peak detection</name>
+    <key>threshold</key>
+    <type>float</type>
+  </param>
+  <sink>
+    <name>Incoming symbols</name>
+    <type>complex</type>
+  </sink>
+
+  <source>
+    <name>Header Sequence</name>
+    <type>complex</type>
+  </source>
+  <source>
+    <name>Payload</name>
+    <type>complex</type>
+  </source>
+  <source>
+    <name>Correlation</name>
+    <type>float</type>
+  </source>
+</block>

@@ -80,7 +80,8 @@ namespace gr {
           //printf("Entered State 1: %f  i: %d  noutput_items: %d\n", iptr[i], i, noutput_items);
           if(iptr[i] > peak_val) {
             peak_val = iptr[i];
-            peak_ind = i+1;
+            //peak_ind = i+1;
+            peak_ind = i;
             i++;
           }
           else if(iptr[i] > d_threshold) {

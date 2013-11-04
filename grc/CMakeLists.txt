@@ -23,5 +23,6 @@ install(FILES
     dctk_generic_tx_path.xml
     dctk_frame_sync.xml
     dctk_peak_detector_abs_value_fb.xml
-    dctk_header_tag_generator.xml DESTINATION share/gnuradio/grc/blocks
+    dctk_header_tag_generator.xml
+    dctk_generic_rx_path.xml DESTINATION share/gnuradio/grc/blocks
 )
