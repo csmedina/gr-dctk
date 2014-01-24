@@ -38,5 +38,5 @@
     <type>complex</type>
     <vlen>1</vlen>
   </source>
-  <doc>This forms a generic transmission path for digital communications, it accepts a payload and a synchronizatino header to form a digital transmission packet</doc>
+  <doc>This forms a generic transmission path for digital communications, it accepts a payload and a synchronizatino header to form a digital transmission packet.</doc>
 </block>

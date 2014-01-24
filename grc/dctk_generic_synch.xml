@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<block>
+  <name>generic_synch</name>
+  <key>dctk_generic_synch</key>
+  <category>DCTK</category>
+  <import>import dctk</import>
+  <make>dctk.generic_synch(
+		costas_loop_bw=$costas_loop_bw, costas_order=$costas_order, mm_omega=$mm_omega, mm_gain_omega=$mm_gain_omega, mm_mu=$mm_mu, mm_gain_mu=$mm_gain_mu, mm_omega_relative_limit=$mm_omega_relative_limit
+		)</make>
+  <param>
+    <name>Internal 2nd order loop bandwidth</name>
+    <key>costas_loop_bw</key>
+    <type>float</type>
+  </param>
+  <param>
+    <name>The loop order, either 2, 4, or 8</name>
+    <key>costas_order</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Initial estimate of samples per symbol</name>
+    <key>mm_omega</key>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Gain setting for omega update loop</name>
+    <key>mm_gain_omega</key>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Initial estimate of phase of sample</name>
+    <key>mm_mu</key>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Gain setting for mu update loop</name>
+    <key>mm_gain_mu</key>
+    <type>float</type>
+  </param>
+  <param>
+    <name>limit on omega</name>
+    <key>mm_omega_relative_limit</key>
+    <type>float</type>
+  </param>
+  
+  <sink>
+    <name>Symbols</name>
+    <type>complex</type>
+  </sink>
+  <source>
+    <name>Synch Symbols</name>
+    <type>complex</type>
+  </source>
+</block>

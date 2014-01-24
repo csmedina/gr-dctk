@@ -29,7 +29,7 @@ namespace gr {
   namespace dctk {
 
     /*!
-     * \brief <+description of block+>
+     * \brief Creates a intermodule comunication message to inform the tagged stream demux the size of the header stream.
      * \ingroup dctk
      *
      */

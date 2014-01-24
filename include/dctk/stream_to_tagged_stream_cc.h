@@ -29,7 +29,7 @@ namespace gr {
   namespace dctk {
 
     /*!
-     * \brief <+description of block+>
+     * \brief Receives a (untagged) stream to transform into a tagged stream.
      * \ingroup dctk
      *
      */

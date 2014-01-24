@@ -33,7 +33,7 @@ import dctk_swig as dctk
 
 class generic_tx_path(gr.hier_block2):
     """
-    docstring for block generic_tx_path
+    This forms a generic transmission path for digital communications, it accepts a payload and a synchronizatino header to form a digital transmission packet.
     """
     def __init__(self, payload_packet_len=96, sync_packet_len=96):
         gr.hier_block2.__init__(self,

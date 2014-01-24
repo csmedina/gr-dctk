@@ -29,7 +29,7 @@ namespace gr {
   namespace dctk {
 
     /*!
-     * \brief <+description of block+>
+     * \brief This module searches for the peak of the absolute value of the autocorrelation function between  the reference signal and the incoming symbols.
      * \ingroup dctk
      *
      */

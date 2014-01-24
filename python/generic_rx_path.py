@@ -26,7 +26,7 @@ import dctk_swig as dctk
 
 class generic_rx_path(gr.hier_block2):
     """
-    docstring for block generic_rx_path
+    This block represents a generic receiver path, which implements the phase, frame, carrier and symbol sinchronism. Also it cuts the frame into header and payload frames.
     """
     def __init__(self, payload_len=96, sync_seq=[complex(1,0),complex(-1,0)], threshold=.8):
         gr.hier_block2.__init__(self,

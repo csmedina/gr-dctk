@@ -29,7 +29,7 @@ namespace gr {
   namespace dctk {
 
     /*!
-     * \brief <+description of block+>
+     * \brief When this module detects the peak of the input signal, and if the peak is above the threshold, then outputs the logical '1' to trigger other modules in the receiver.
      * \ingroup dctk
      *
      */

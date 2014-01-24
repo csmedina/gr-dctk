@@ -2,7 +2,7 @@
 ##################################################
 # Gnuradio Python Flow Graph
 # Title: Bpsk Tx
-# Generated: Mon Nov  4 13:00:16 2013
+# Generated: Mon Nov 25 15:50:15 2013
 ##################################################
 
 from gnuradio import blocks
@@ -26,7 +26,7 @@ class bpsk_tx(gr.top_block):
         # Variables
         ##################################################
         self.sync_word = sync_word = [complex(1, 0), complex(1, 0), complex(-1, 0), complex(-1, 0), complex(-1, 0), complex(-1, 0), complex(1, 0), complex(-1, 0), complex(1, 0), complex(1, 0), complex(-1, 0), complex(1, 0), complex(1, 0), complex(1, 0), complex(-1, 0), complex(-1, 0), complex(1, 0), complex(-1, 0), complex(1, 0), complex(-1, 0), complex(-1, 0), complex(1, 0), complex(1, 0), complex(-1, 0), complex(-1, 0), complex(1, 0), complex(1, 0), complex(-1, 0), complex(1, 0), complex(1, 0), complex(1, 0), complex(-1, 0), complex(1, 0), complex(-1, 0), complex(1, 0), complex(1, 0), complex(1, 0), complex(-1, 0), complex(-1, 0), complex(-1, 0), complex(-1, 0), complex(1, 0), complex(-1, 0), complex(-1, 0), complex(-1, 0), complex(-1, 0), complex(-1, 0), complex(1, 0), complex(1, 0), complex(-1, 0)]
-        self.samp_rate = samp_rate = 100000
+        self.samp_rate = samp_rate = 1000000
         self.samp_per_symb = samp_per_symb = 8
         self.payload_mod = payload_mod = digital.constellation_bpsk()
         self.packet_len = packet_len = 96
